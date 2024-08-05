@@ -1,11 +1,27 @@
 let operators= ["+", "-", "/", "^", "X", "%"]
 let operator = false
 
+const chooseOperator = {
+    '+': add,
+    '-': subtract,
+    '/': divide,
+    '^': power,
+    'X': multiply,
+    '%': mod,
+}
+
 function evaluate(formula) {
     if (operators.includes(formula[formula.length - 1]) || operators.includes(formula[0])) {
         return
     }
-    
+    let regularExp = /[\+\-\/\^X%]/; 
+    let index = formula.search(regularExp)
+    let equation = [formula.slice(0,index), formula[index], formula.slice(index+1)]
+    let result = chooseOperator[equation[1]](Number(equation[0]), Number(equation[2]))
+    if (result === NaN) {
+        result = "Error"
+    }
+    return result
 }
 
 function add(num1, num2){
