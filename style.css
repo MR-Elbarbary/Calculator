@@ -1,9 +1,14 @@
+*{
+    font-family: 'Orbitron', 'Digital-7', 'Courier New', monospace;
+}
+
 body{
     min-height: 100vh;
     display: flex;
     flex: 0 1 auto;
     justify-content: center;
     align-items: center;
+    background-color: rgb(243, 243, 75);
 }
 
 .calculator{
@@ -28,6 +33,7 @@ body{
     font-size: 25px;
     padding: 10px;
     justify-content: space-between;
+    font-family: 'Orbitron', 'Digital-7', 'Courier New', monospace;
 }
 
 .result{
@@ -55,7 +61,6 @@ body{
     color: white;
     border-color: #3e679a;
     font-size: 20px;
-    font-weight: bold;
     padding: 0px 6px;
 }
 
@@ -65,22 +70,23 @@ button{
     border-color: white;
     flex: 1 1 0;
     font-size: 22px;
+    font-weight: bold;
 }
 
 #topLeft{
-    border-radius: 10% 0% 0% 0%;
+    border-radius: 20% 0% 0% 0%;
 }
 
 #ac{
-    border-radius: 0% 10% 0% 0%;
+    border-radius: 0% 20% 0% 0%;
 }
 
 #equal{
-    border-radius: 0% 0% 10% 0%;
+    border-radius: 0% 0% 20% 0%;
 }
 
 #bottomLeft{
-    border-radius: 0% 0% 0% 10%;
+    border-radius: 0% 0% 0% 20%;
 }
 
 .head{
