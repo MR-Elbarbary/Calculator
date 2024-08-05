@@ -1,0 +1,115 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    background-color:#333;
+    padding: 15px;
+    border-radius: 7%;
+    width: 400px;
+    height: 600px;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    height: 150px;
+    background-color: #5f5e5e;
+    color: black;
+    border-radius: 7%;
+    font-size: 25px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.result{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons{
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 10px;
+    margin: 10px 5px;
+}
+
+.row{
+    display: flex;
+    flex: 1 1 auto;
+    gap: 10px;
+}
+
+.blue{
+    background-color: #3e679a;
+    color: white;
+    border-color: #3e679a;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 6px;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border-color: white;
+    flex: 1 1 0;
+    font-size: 22px;
+}
+
+#topLeft{
+    border-radius: 10% 0% 0% 0%;
+}
+
+#ac{
+    border-radius: 0% 10% 0% 0%;
+}
+
+#equal{
+    border-radius: 0% 0% 10% 0%;
+}
+
+#bottomLeft{
+    border-radius: 0% 0% 0% 10%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.solarCell{
+    background-color: #2C1C14;
+    height: 100px;
+    width: 60%;
+    align-self: flex-end;
+    border-radius: 14%;
+}
+
+h1{
+    margin: 0px 0px 10px 0px;
+}
+
+h5{
+    margin: 0px 0px 2px 0px;
+}
+
+h3{
+    margin: 0px;
+    color: rgb(192, 102, 102);
+}
+
+.model{
+    color: white;
+}
