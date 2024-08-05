@@ -36,6 +36,13 @@ body{
     font-family: 'Orbitron', 'Digital-7', 'Courier New', monospace;
 }
 
+.display{
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    max-width: 324px;
+}
+
 .result{
     display: flex;
     justify-content: flex-end;
