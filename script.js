@@ -58,6 +58,10 @@ function Del(display) {
     display.textContent = array.join('');
 }
 
+function clear(element) {
+    element.textContent = ''
+}
+
 document.addEventListener("DOMContentLoaded", () =>{
     let display = document.querySelector(".display")
     let normalButtons = document.querySelectorAll(".common")
@@ -85,7 +89,13 @@ document.addEventListener("DOMContentLoaded", () =>{
                     return
                 }
                 else if(display.textContent === ''){
-                    return
+                    if(result.textContent === ''){
+                        return
+                    }
+                    else{
+                        display.textContent = result.textContent
+                        clear(result.textContent)
+                    }
                 }
                 operator = true
             }
